@@ -1,0 +1,9 @@
+[user]
+	name = Matt Phillips
+[push]
+	default = simple
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
