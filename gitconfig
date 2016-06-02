@@ -3,7 +3,22 @@
 [push]
 	default = simple
 [alias]
-	co = checkout
-	br = branch
-	ci = commit
-	st = status
+  bd = branch -d
+  br = branch
+  ci = commit
+  ciam = commit -am
+  cim = commit -m
+  cl = clone
+  co = checkout
+  f = "!git ls-files | grep -i"
+  fb = "!f() { git checkout -b feature/$1; }; f"
+  ig = "!f() { index=1; for arg in $@; do echo $arg >> .gitignore; let index+=1; done; }; f"
+  mnff = merge --no-ff
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+  st = status
+  visual = !gitk

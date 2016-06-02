@@ -1,16 +1,13 @@
-source $(brew --prefix nvm)/nvm.sh
-export GRADLE_HOME="/usr/local/Cellar/gradle/2.13/libexec"
-export JAVA_HOME="$(/usr/libexec/java_home)"
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/matt/.oh-my-zsh
+export GRADLE_HOME="/usr/local/Cellar/gradle/2.13/libexec"
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="edvardm"
+ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,11 +51,12 @@ ZSH_THEME="edvardm"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(brew brew-cask git gradle gulp npm)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin;${JAVA_HOME}/bin;${GRADLE_HOME}/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,3 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
+alias wk="cd ~/workspace"
+alias home="cd ~/"
+alias lsa="ls -a"
