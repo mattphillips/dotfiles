@@ -1,0 +1,47 @@
+'.source.js':
+  'if, else if, else':
+    'prefix': 'ieie'
+    'body': """
+      if (${1:true}) {
+        $2
+      } else if (${3:false}) {
+        $4
+      } else {
+        $5
+      }
+    """
+  'BDD des':
+    'prefix': 'des'
+    'body': """
+      describe('$1', () => {
+        $2
+      });
+    """
+  'BDD it':
+    'prefix': 'it'
+    'body': """
+      it('$1', () => {
+        $2
+      });
+    """
+  'BDD expect':
+    'prefix': 'ex'
+    'body': 'expect(actual$1).to.equal($2);'
+  'BDD expect deep':
+    'prefix': 'exd'
+    'body': 'expect(actual$1).to.deep.equal($2);'
+  'BDD expect true':
+    'prefix': 'ext'
+    'body': 'expect(actual$1).to.be.true;'
+  'BDD expect false':
+    'prefix': 'exf'
+    'body': 'expect(actual$1).to.be.false;'
+  'Reduce':
+    'prefix': 'red'
+    'body': '$1.redcue(($2, $3) => $4, $5);'
+  'Map':
+    'prefix': 'map'
+    'body': '$1.map($2 => $3);'
+  'Filter':
+    'prefix': 'fil'
+    'body': '$1.filter($2 => $3);'
