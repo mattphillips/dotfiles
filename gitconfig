@@ -3,6 +3,7 @@
 [push]
 	default = simple
 [alias]
+	ano = commit --amend --no-edit
   bd = branch -d
   br = branch
   ci = commit
