@@ -2,6 +2,7 @@
 export ZSH=/Users/matt/.oh-my-zsh
 export GRADLE_HOME="/usr/local/Cellar/gradle/2.13/libexec"
 export JAVA_HOME="$(/usr/libexec/java_home)"
+export EDITOR=/usr/bin/vim
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
