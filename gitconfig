@@ -1,9 +1,9 @@
 [user]
-	name = Matt Phillips
+  name = Matt Phillips
 [push]
-	default = simple
+  default = simple
 [alias]
-	ano = commit --amend --no-edit
+  ano = commit --amend --no-edit
   bd = branch -d
   br = branch
   ci = commit
