@@ -13,6 +13,8 @@
   cim = commit -m
   cl = clone
   co = checkout
+  d = diff
+  dc = diff --cached
   f = "!git ls-files | grep -i"
   fb = "!f() { git checkout -b feature/$1; }; f"
   ig = "!f() { index=1; for arg in $@; do echo $arg >> .gitignore; let index+=1; done; }; f"
