@@ -3,6 +3,8 @@
 [push]
   default = simple
 [alias]
+  ap = add -p
+  au = add -u
   ano = commit --amend --no-edit
   bd = branch -d
   br = branch
