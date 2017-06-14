@@ -102,3 +102,5 @@ alias refresh="source ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias tw="npm t -- -w"
 alias wk="cd ~/workspace"
+alias server="python -m SimpleHTTPServer"
+
