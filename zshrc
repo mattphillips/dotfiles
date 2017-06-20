@@ -86,6 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias crna="create-react-native-app"
+alias cra="create-react-app"
 alias config="vim ~/.zshrc"
 alias dc="cd ~/Documents"
 alias dev="npm run dev"
