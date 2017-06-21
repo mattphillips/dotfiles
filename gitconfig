@@ -31,5 +31,8 @@
   rh = reset --hard
   rh1 = reset HEAD^ --hard
   rh2 = reset HEAD^^ --hard
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
   st = status
   visual = !gitk
