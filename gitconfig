@@ -20,7 +20,7 @@
   f = "!git ls-files | grep -i"
   fb = "!f() { git checkout -b feature/$1; }; f"
   ig = "!f() { index=1; for arg in $@; do echo $arg >> .gitignore; let index+=1; done; }; f"
-  new="!f() { git init && git checkout -b master && git commit --allow-empty -m 'Initial commit'; }; f
+  new="!f() { git init && git checkout -b master && git commit --allow-empty -m 'Initial commit'; }; f"
   mnff = merge --no-ff
   p = push
   pb = push -u origin HEAD
