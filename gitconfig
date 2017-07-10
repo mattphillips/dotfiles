@@ -3,6 +3,7 @@
 [push]
   default = simple
 [alias]
+  addor = "!f() { git remote add origin git@github.com:mattphillips/$1.git; }; f"
   ap = add -p
   au = add -u
   ano = commit --amend --no-edit
