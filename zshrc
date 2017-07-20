@@ -104,7 +104,7 @@ alias lsa="ls -a"
 alias nuke="rm -rf $1"
 alias refresh="source ~/.zshrc"
 alias reload="source ~/.zshrc"
-alias tw="npm t -- -w"
+alias tw="yarn test -- --watch"
 alias wk="cd ~/workspace"
 alias server="python -m SimpleHTTPServer"
 
