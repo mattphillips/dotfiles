@@ -15,6 +15,7 @@
   cl = "!f() { git clone git@github.com:$1/$2.git; }; f"
   clmp = "!f() { git clone git@github.com:mattphillips/$1.git; }; f"
   co = checkout
+  cob = checkout -b
   com = checkout master
   d = diff
   dc = diff --cached
