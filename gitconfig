@@ -27,6 +27,7 @@
   p = push
   pb = push -u origin HEAD
   pf = push --force
+  pl = pull
   r = reset
   r1 = reset HEAD^
   r2 = reset HEAD^^
