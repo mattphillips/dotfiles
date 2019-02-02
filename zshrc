@@ -107,4 +107,8 @@ alias reload="source ~/.zshrc"
 alias tw="yarn test -- --watch"
 alias wk="cd ~/workspace"
 alias server="python -m SimpleHTTPServer"
+alias dcu="docker-compose up"
+alias dnuke="docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)"
+alias yad="yarn add -D"
+alias ya="yarn add"
 
