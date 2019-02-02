@@ -11,12 +11,13 @@
   br = branch
   ci = commit
   ciam = commit -am
-  cim = "!f() { git commit -m \"$*\"; }; f"
+  cim = commit -m
   cl = "!f() { git clone git@github.com:$1/$2.git; }; f"
   clmp = "!f() { git clone git@github.com:mattphillips/$1.git; }; f"
   co = checkout
   cob = checkout -b
   com = checkout master
+  cod = checkout develop
   d = diff
   dc = diff --cached
   f = "!git ls-files | grep -i"
@@ -38,4 +39,5 @@
   rba = rebase --abort
   rbc = rebase --continue
   st = status
+  upstream = "!f() { git remote add upstream git@github:$1/$1.git; }; f"
   visual = !gitk
