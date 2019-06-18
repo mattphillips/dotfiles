@@ -16,8 +16,9 @@
   clmp = "!f() { git clone git@github.com:mattphillips/$1.git; }; f"
   co = checkout
   cob = checkout -b
-  com = checkout master
   cod = checkout develop
+  com = checkout master
+  contributors = git shortlog -s -n
   d = diff
   dc = diff --cached
   f = "!git ls-files | grep -i"
