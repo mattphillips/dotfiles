@@ -18,7 +18,7 @@
   cob = checkout -b
   cod = checkout develop
   com = checkout master
-  contributors = git shortlog -s -n
+  contributors = shortlog -s -n
   d = diff
   dc = diff --cached
   f = "!git ls-files | grep -i"
