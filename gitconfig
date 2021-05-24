@@ -17,14 +17,14 @@
   co = checkout
   cob = checkout -b
   cod = checkout develop
-  com = checkout master
+  com = checkout main
   contributors = shortlog -s -n
   d = diff
   dc = diff --cached
   f = "!git ls-files | grep -i"
   fb = "!f() { git checkout -b feature/$1; }; f"
   ig = "!f() { index=1; for arg in $@; do echo $arg >> .gitignore; let index+=1; done; }; f"
-  new="!f() { git init && git checkout -b master && git commit --allow-empty -m 'Initial commit'; }; f"
+  new="!f() { git init && git checkout -b main  && git commit --allow-empty -m 'Initial commit'; }; f"
   mnff = merge --no-ff
   p = push
   pb = push -u origin HEAD
@@ -42,3 +42,5 @@
   st = status
   upstream = "!f() { git remote add upstream git@github:$1/$1.git; }; f"
   visual = !gitk
+[init]
+  defaultBranch = main
